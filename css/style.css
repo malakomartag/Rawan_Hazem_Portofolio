@@ -1,0 +1,313 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #0e0e0e;
+  background-color: #f0f8ff;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #680098;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #370050;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url("/images/view-laboratory-equipment-neon-lights.jpg") no-repeat center center/cover;
+  color: rgb(213, 213, 213);
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(83, 19, 116, 0.616);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #680098;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background-color: #cc5dff;
+}
+
+/* Sections */
+section {
+  padding: 80px 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* About Section */
+.about h2 {
+  font-size: 2.5rem;
+  color: #4b006d;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Grid for Skills  */
+h2{
+  color: #4b006d;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill,
+.achievement {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px #380251;
+}
+
+.skill h3,
+.achievement h3 {
+  color: #9842c0;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+  background-color: #000000;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta button,
+.btn-consult {
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.cta button:hover,
+.btn-consult:hover {
+  background-color: #009acd;
+}
+
+/* Footer */
+footer {
+  background-color: #9842c0;
+  
+  background-color: rgba(83, 19, 116, 0.616);
+  
+  color: white;
+  padding: 20px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #4f0073;
+}
+
+.footer-top {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+.footer-top h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-top p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.footer-top .btn-consult {
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 1rem;
+  background-color: #680098;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-top .btn-consult:hover {
+  background-color: #cc5dff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social-hours {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.footer-about h3,
+.footer-contact h4,
+.footer-social-hours h4 {
+  color: #370050;
+  margin-bottom: 10px;
+}
+
+.footer-social-hours .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-social-hours .hours {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.social-logo {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+.social-logo:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 60px;
+  color: #680098;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 50px 20px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-about,
+  .footer-contact,
+  .footer-social-hours {
+    text-align: center;
+  }
+}
