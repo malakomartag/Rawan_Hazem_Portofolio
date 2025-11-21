@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 /* GENERAL */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   background: #f5f7fa;
 }
 
@@ -39,336 +38,34 @@ nav ul li a {
 nav ul li a:hover {
   color: #370050;
 }
+
 .hero {
-  background: url("/images/view-laboratory-equipment-neon-lights.jpg") no-repeat center center/cover;
-  color: rgb(213, 213, 213);
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 30px auto;
-}
-
-/* MAIN LAYOUT WRAPPER */
-.page-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
-  gap: 40px;
-  padding: 50px;
-}
-
-/* FORM */
-.form-section {
-  flex: 2;
-  background: white;
-  padding: 3rem;
-  border-radius: 10px;
-}
-
-h1 {
-  color: #143c87;
-  margin-bottom: 20px;
-}
-
-label {
-  font-weight: bold;
-  display: block;
-  margin-top: 15px;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-top: 5px;
-}
-
-textarea {
-  height: 120px;
-}
-
-/* TWO INPUTS SIDE BY SIDE */
-.two {
-  display: flex;
-  gap: 30px;
-  margin-top: 10px;
-}
-
-.two div {
-  flex: 1;
-}
-
-/* BUTTON */
-.submit-btn {
-  width: 100%;
-  margin-top: 25px;
-  padding: 12px;
-  background: #143c87;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* CONTACT PANEL */
-.contact-section {
-  width: 320px;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  height: fit-content;
-}
-
-.contact-section h2 {
-  color: #143c87;
-  margin-bottom: 20px;
-}
-
-.info-box {
-  display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.icon {
-  font-size: 24px;
-  background: #143c87;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-  background-color: #0d3b66;
-  color: white;
-  padding: 20px;
-}
-.footer a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  color: #00bfff;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 2rem auto;
-}
-
-.footer-about,
-.footer-contact,
-.footer-social-hours {
-  flex: 1;
-  min-width: 250px;
-  text-align: left;
-}
-
-.footer-about h3,
-.footer-contact h4,
-.footer-social-hours h4 {
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-
-.footer-social-hours .social-icons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
-.footer-social-hours .hours {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.social-logo {
-  width: 30px;
-  height: 30px;
-  filter: invert(1);
-  transition: transform 0.3s;
-}
-
-.social-logo:hover {
-  transform: scale(1.2);
-}
-
-.footer-bottom {
   text-align: center;
-  margin-top: 60px;
-  color: #88ccee;
+  height: 300px;
+  background: url("/images/view-laboratory-equipment-neon-lights\ \(1\).jpg") no-repeat center center/cover;
+  color: rgb(213, 213, 213);
 }
-@media (max-width: 1024px) {
-  nav {
-    padding: 15px 30px;
-  }
-
-  .page-wrapper {
-    gap: 20px;
-    padding: 30px;
-  }
-}
-
-@media (max-width: 900px) {
-  .page-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-section {
-    width: 100%;
-  }
-
-  .form-section {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .two {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .page-wrapper {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  nav .logo {
-    font-size: 1.2rem;
-  }
-
-  .hero {
-    padding: 70px 15px;
-  }
-
-  .hero h1 {
-    font-size: 1.6rem;
-  }
-
-  .form-section {
-    padding: 1.8rem;
-  }
-
-  input,
-  select,
-  textarea {
-    padding: 10px;
-  }
-
-  .contact-section {
-    padding: 20px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-about,
-  .footer-contact,
-  .footer-social-hours {
-    text-align: center;
-  }
-
-  .social-logo {
-    width: 25px;
-    height: 25px;
-  }
-}
-=======
-/* GENERAL */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background-color: #680098;
-  color: white;
-  position: sticky;
+.hero .overlay{
+  position: absolute;
   top: 0;
-  z-index: 1000;
-}
-
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(83, 19, 116, 0.616);
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
-  color: #370050;
-}
-.hero {
-  background: url("/images/view-laboratory-equipment-neon-lights.jpg") no-repeat center center/cover;
-  color: rgb(213, 213, 213);
-  padding: 100px 20px;
-  text-align: center;
-}
-
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #c9cbce;
 }
 
 .hero p {
@@ -394,7 +91,7 @@ nav ul li a:hover {
 }
 
 h1 {
-  color: #143c87;
+  color: #680098;
   margin-bottom: 20px;
 }
 
@@ -411,6 +108,7 @@ textarea {
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  box-shadow: 0 5px 15px #380251;
   margin-top: 5px;
 }
 
@@ -434,7 +132,7 @@ textarea {
   width: 100%;
   margin-top: 25px;
   padding: 12px;
-  background: #143c87;
+  background: #4b006d;
   color: white;
   border: none;
   border-radius: 8px;
@@ -451,7 +149,7 @@ textarea {
 }
 
 .contact-section h2 {
-  color: #143c87;
+  color: #4b006d;
   margin-bottom: 20px;
 }
 
@@ -464,7 +162,7 @@ textarea {
 
 .icon {
   font-size: 24px;
-  background: #143c87;
+  background: #4b006d;
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -472,7 +170,7 @@ textarea {
 
 /* FOOTER */
 footer {
-  background-color: #0d3b66;
+    background-color: #9842c0;
   color: white;
   padding: 20px;
 }
@@ -483,7 +181,7 @@ footer {
 }
 
 .footer a:hover {
-  color: #00bfff;
+  color: #4f0073;
 }
 
 .footer-content {
@@ -506,7 +204,7 @@ footer {
 .footer-about h3,
 .footer-contact h4,
 .footer-social-hours h4 {
-  color: #00bfff;
+  color: #680098;
   margin-bottom: 10px;
 }
 
@@ -536,7 +234,7 @@ footer {
 .footer-bottom {
   text-align: center;
   margin-top: 60px;
-  color: #88ccee;
+  color: #680098;
 }
 @media (max-width: 1024px) {
   nav {
@@ -548,94 +246,3 @@ footer {
     padding: 30px;
   }
 }
-
-@media (max-width: 900px) {
-  .page-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-section {
-    width: 100%;
-  }
-
-  .form-section {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .two {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .page-wrapper {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  nav .logo {
-    font-size: 1.2rem;
-  }
-
-  .hero {
-    padding: 70px 15px;
-  }
-
-  .hero h1 {
-    font-size: 1.6rem;
-  }
-
-  .form-section {
-    padding: 1.8rem;
-  }
-
-  input,
-  select,
-  textarea {
-    padding: 10px;
-  }
-
-  .contact-section {
-    padding: 20px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-about,
-  .footer-contact,
-  .footer-social-hours {
-    text-align: center;
-  }
-
-  .social-logo {
-    width: 25px;
-    height: 25px;
-  }
-}
->>>>>>> 9f0d41c15fdce484c48b6f36b65a96ce3a655990
