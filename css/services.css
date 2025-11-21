@@ -1,16 +1,16 @@
-<<<<<<< HEAD
+/* GENERAL */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Navbar */
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 15px 40px;
   background-color: #680098;
   color: white;
   position: sticky;
@@ -19,14 +19,14 @@ nav {
 }
 
 nav .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
 nav ul li a {
@@ -37,589 +37,126 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #370050;
+  color: #d7baff;
 }
+
+/* HERO SECTION */
 .hero {
   position: relative;
+  height: 450px;
+  background: url("/images/view-laboratory-equipment-neon-lights (1).jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  height: 300px;
-  background: url("/images/view-laboratory-equipment-neon-lights\ \(1\).jpg") no-repeat center center/cover;
-  color: rgb(213, 213, 213);
+  color: #fff;
 }
+
 .hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(83, 19, 116, 0.616);
+  background-color: rgba(60, 0, 95, 0.55);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
 }
+
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.2rem;
   max-width: 700px;
-  margin: 0 auto 30px auto;
+  margin-bottom: 25px;
 }
 
 .hero button {
-  background-color: #680098;
+  background-color: #8800c0;
+  padding: 14px 28px;
   border: none;
-  padding: 12px 25px;
+  border-radius: 7px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
+  color: white;
   transition: 0.3s;
-  color: #f8f8f8;
 }
+
 .hero button:hover {
   background-color: #cc5dff;
 }
+
+/* SERVICES CARDS */
 .services-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 50px;
-  margin: 2rem;
+  gap: 25px;
+  padding: 50px 40px;
 }
 
 .card {
   background-color: #680098;
   color: white;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  min-height: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  min-height: 280px;
 }
 
 .card-icon {
-  width: 50px;
-  height: 50px;
-  background-color: #c3c1b9; 
+  width: 55px;
+  height: 55px;
+  background-color: #e6e2d8;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  align-items: center;
+  font-size: 1.6rem;
   margin-bottom: 15px;
 }
 
-.card h3 {
-  margin: 10px 0;
-}
-
-.card p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 15px;
-  text-decoration: none;
-  color: #680098;
-  font-weight: bold;
-}
-
+/* WHY CHOOSE */
 .why-choose {
-  background-color: #f8f8f8;
-  padding: 50px 20px;
+  background-color: #fafafa;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.why-choose h2 {
-  margin-bottom: 50px;
-  font-size: 2rem;
-  color: #680098;
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.feature {
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.feature h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #680098;
-}
-
-.feature p {
-  font-size: 0.9rem;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
   background-color: #9842c0;
   color: white;
   padding: 20px;
-}
-.footer a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
+  margin-top: 50px;
 }
 
-.footer a:hover {
-  color: #4f0073;
-}
-
-.footer-top {
-  text-align: center;
-  padding: 50px 20px;
-  color: white;
-}
-
-.footer-top h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.footer-top p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-}
-
-.footer-top .btn-consult {
-  display: inline-block;
-  padding: 15px 35px;
-  font-size: 1rem;
-  background-color: #680098;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-top .btn-consult:hover {
-  background-color: #cc5dff;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-about,
-.footer-contact,
-.footer-social-hours {
-  flex: 1;
-  min-width: 250px;
-  text-align: left;
-}
-
-.footer-about h3,
-.footer-contact h4,
-.footer-social-hours h4 {
-  color: #370050;
-  margin-bottom: 10px;
-}
-
-.footer-social-hours .social-icons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
-.footer-social-hours .hours {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.social-logo {
-  width: 30px;
-  height: 30px;
-  filter: invert(1);
-  transition: transform 0.3s;
-}
-
-.social-logo:hover {
-  transform: scale(1.2);
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 60px;
-  color: #680098;
-}
-@media (max-width: 500px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
+/* RESPONSIVE */
+@media (max-width: 600px) {
   nav {
     flex-direction: column;
-    gap: 15px;
-    overflow: hidden;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  section {
-    padding: 50px 20px;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer-about,
-  .footer-contact,
-  .footer-social-hours {
-    text-align: center;
-  }
-  .services-cards {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    margin: 1rem;
+    gap: 10px;
   }
 
-  .card {
-    min-height: auto;
-  }
-}
-=======
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Navbar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background-color: #680098;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
-  color: #370050;
-}
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 300px;
-  background: url("/images/view-laboratory-equipment-neon-lights\ \(1\).jpg") no-repeat center center/cover;
-  color: rgb(213, 213, 213);
-}
-.hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(83, 19, 116, 0.616);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 30px auto;
-}
-
-.hero button {
-  background-color: #680098;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
-  color: #f8f8f8;
-}
-.hero button:hover {
-  background-color: #cc5dff;
-}
-.services-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 50px;
-  margin: 2rem;
-}
-
-.card {
-  background-color: #680098;
-  color: white;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  min-height: 300px;
-}
-
-.card-icon {
-  width: 50px;
-  height: 50px;
-  background-color: #c3c1b9; 
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  margin: 10px 0;
-}
-
-.card p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 15px;
-  text-decoration: none;
-  color: #680098;
-  font-weight: bold;
-}
-
-.why-choose {
-  background-color: #f8f8f8;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.why-choose h2 {
-  margin-bottom: 50px;
-  font-size: 2rem;
-  color: #680098;
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.feature {
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.feature h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #680098;
-}
-
-.feature p {
-  font-size: 0.9rem;
-}
-
-/* Footer */
-footer {
-  background-color: #9842c0;
-  color: white;
-  padding: 20px;
-}
-.footer a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  color: #4f0073;
-}
-
-.footer-top {
-  text-align: center;
-  padding: 50px 20px;
-  color: white;
-}
-
-.footer-top h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.footer-top p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-}
-
-.footer-top .btn-consult {
-  display: inline-block;
-  padding: 15px 35px;
-  font-size: 1rem;
-  background-color: #680098;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-top .btn-consult:hover {
-  background-color: #cc5dff;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-about,
-.footer-contact,
-.footer-social-hours {
-  flex: 1;
-  min-width: 250px;
-  text-align: left;
-}
-
-.footer-about h3,
-.footer-contact h4,
-.footer-social-hours h4 {
-  color: #370050;
-  margin-bottom: 10px;
-}
-
-.footer-social-hours .social-icons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
-.footer-social-hours .hours {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.social-logo {
-  width: 30px;
-  height: 30px;
-  filter: invert(1);
-  transition: transform 0.3s;
-}
-
-.social-logo:hover {
-  transform: scale(1.2);
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 60px;
-  color: #680098;
-}
-@media (max-width: 500px) {
   nav ul {
-    display: flex;
     flex-direction: column;
-  }
-  nav {
-    flex-direction: column;
-    gap: 15px;
-    overflow: hidden;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  section {
-    padding: 50px 20px;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer-about,
-  .footer-contact,
-  .footer-social-hours {
-    text-align: center;
-  }
-  .services-cards {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    margin: 1rem;
+    gap: 10px;
   }
 
-  .card {
-    min-height: auto;
+  .hero {
+    height: 380px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .services-cards {
+    padding: 20px;
   }
 }
->>>>>>> 9f0d41c15fdce484c48b6f36b65a96ce3a655990
